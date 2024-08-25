@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>Our Collection</h2>
+
+  <div fxLayout="row grap" fxLayoutAlign="flex-end">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search...">
+    </mat-form-field>
+  
+    <mat-form-field class="sort-select">
+      <mat-select matNativeControl (selectionChange)="sortProducts($event.value)" placeholder="Sort">
+        <mat-option value="priceLowToHigh">Price: low to high</mat-option>
+        <mat-option value="priceHighToLow">Price: High to Low</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+
+  <div fxLayout="row grap" fxLayoutGap="50px grid">
+    <div *ngFor="let product of filteredProducts">
+        <mat-card class="product-card" (click)="addToCart(product)">
+            <mat-card-header>
+                <img mat-card-avatar class="product-header-image" src="assets/images/{{product.image_url}}">
+                <mat-card-title>{{product.name}}</mat-card-title>
+              </mat-card-header>
+            <img mat-card-image src="assets/images/{{product.image_url}}" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <mat-card-title>{{product.name}}</mat-card-title>
+                <mat-card-subtitle>{{product.price | currency}}</mat-card-subtitle>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.example-spacer {
+    flex: 1 1 auto;
+    padding: auto;
+  }
+
+.example-icon{
+    margin: 10px;
+    color: black;
+}
+
+
+.text-center{
+    text-align: center;
+}

@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: rgb(244, 244, 244);
+}
+
+a{
+    text-decoration: none;
+}
+a.example-icon:hover{
+    transform: scale(1.05);
+    opacity: .8;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 50px;
+    margin: auto;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: auto;
+}
+
+.example-icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.example-icon {
+    background-color: rgb(244, 244, 244);
+    border: 0px;
+    transition: transform .2s;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-mdc-snack-bar-container.custom-snackbar{
+    --mdc-snackbar-container-color: rgb(237, 240, 216);
+    --mdc-snackbar-supporting-text-color: rgba(10, 10, 10, 0.87);
+    --mat-snack-bar-button-color: #0c0c0c;
+}
