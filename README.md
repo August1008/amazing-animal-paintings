@@ -1,5 +1,7 @@
 # AmazingAnimalPaintings
 
+website: https://august1008.github.io/amazing-animal-paintings/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
 ## Development server
